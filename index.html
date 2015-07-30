@@ -1,0 +1,158 @@
+<!doctype html>
+<title>System Font CSS</title>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="system-font.css" rel="stylesheet">
+<style>
+@font-face {
+	font-family: monospace;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Menlo-Regular"), local("Monaco"), local("Consolas"), local("DejaVu Sans Mono"), local("DejaVu Sans Mono");
+}
+
+@font-face {
+	font-family: monospace;
+	font-style: italic;
+	font-weight: 400;
+	src: local("Menlo-Regular"), local("Monaco"), local("Consolas-Italic"), local("DejaVu Sans Mono Oblique");
+}
+
+@font-face {
+	font-family: monospace;
+	font-style: normal;
+	font-weight: 700;
+	src: local("Menlo-Regular"), local("Monaco"), local("Consolas-Bold"), local("DejaVu Sans Mono Bold");
+}
+
+@font-face {
+	font-family: monospace;
+	font-style: italic;
+	font-weight: 700;
+	src: local("Menlo-Regular"), local("Monaco"), local("Consolas-BoldItalic"), local("DejaVu Sans Mono Bold Oblique");
+}
+
+body {
+	font: 1em/1.6 system;
+	margin: 3em auto;
+	max-width: 40em;
+}
+
+@media (max-width: 42em) {
+	body {
+		margin: 3em 1em;
+	}
+}
+
+h1,
+h2 {
+	border-bottom: 1px solid #eee;
+	padding-bottom: .3em;
+}
+
+h1 {
+	margin: 1em 0 1rem;
+	font-size: 2.25em;
+}
+
+h2 {
+	font-size: 1.75em;
+	line-height: 1.225;
+	margin: 1em 0 1rem;
+}
+
+code,
+pre {
+	border-radius: 3px;
+	font-family: "monospace", monospace;
+	font-size: 1em;
+}
+
+p,
+pre {
+	margin: 0 0 1em;
+}
+
+code {
+	background-color: rgba(0,0,0,.04);
+	font-size: 85%;
+	padding: .2em;
+}
+
+pre {
+	background-color: #f7f7f7;
+	line-height: 1.45;
+	padding: 1em;
+}
+
+a {
+	color: #4078c0;
+	text-decoration: none;
+}
+
+a:focus,
+a:hover {
+	text-decoration: underline;
+}
+</style>
+
+<h1>
+	System Font CSS
+</h1>
+
+<p>
+	System Font CSS is set of <code>@font-face</code> rules that let you use the native system font of the OS running the browser.
+</p>
+
+<pre>
+body {
+    font-family: system;
+}
+</pre>
+
+<p>
+	<a href="https://github.com/jonathantneal/system-font-css">system-font.css</a> offers eight variations of the <code>system</code> font family; <strong>light</strong> (300) <strong>light italic</strong>, <strong>normal</strong> (400), <strong>normal italic</strong>, <strong>medium</strong> (500), <strong>medium italic</strong>, <strong>bold</strong> (700), and <strong>bold italic</strong>.
+</p>
+
+<pre>
+blockquote {
+    font: italic 300 system;
+}
+
+p {
+    font: 400 system;
+}
+</pre>
+
+<h2>
+	OSX
+</h2>
+
+<p>
+	<strong>OSX</strong> has used three system typefaces. Since <strong>El Capitan</strong> it has used <strong>San Fransisco</strong>. In <strong>Yosemite</strong> it used <strong>Helvetica Neue</strong>. From <strong>Mavericks</strong> back to <strong>Kodiak</strong> it used <strong>Lucida Grande</strong>.
+</p>
+
+<h2>
+	Windows
+</h2>
+
+<p>
+	<strong>Windows</strong> has used four system typefaces. Since <strong>Vista</strong> it has used <strong>Segoe UI</strong>. In XP, it used <strong>Tahoma</strong>, which oddly enough does not have an italic variation. From <strong>Windows XP</strong> back to <strong>Windows 3.1</strong> it used <strong>Microsoft Sans Serif</strong>. Finally, from <strong>Windows 2.0</strong> back to <strong>Windows 1.0</strong> it used <strong>Fixedsys</strong>, which is not included in this set, with apologies to Windows 2.0 users.
+</p>
+
+<h2>
+	Ubuntu
+</h2>
+
+<p>
+	Ubuntu has always used one system typeface, apty named <strong>Ubuntu</strong>. That part was easy.
+</p>
+
+<h2>
+	Is <code>system</code> going to be a thing?
+</h2>
+
+<p>
+	Maybe. There are <a href="https://lists.w3.org/Archives/Public/www-style/2015Jul/0169.html" target="_blank">discussions in the W3C</a> to standardize a generic <code>system</code> family.
+</p>

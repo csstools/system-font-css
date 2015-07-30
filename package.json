@@ -1,0 +1,24 @@
+{
+	"name": "system-font-css",
+	"description": "Use the native system font of the OS running the browser",
+	"version": "1.0.0",
+	"author": "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com)",
+	"contributors": [],
+	"homepage": "https://github.com/jonathantneal/system-font-css",
+	"license": "CC0-1.0",
+	"keywords": ["system", "fonts", "faces", "rules", "css", "mac", "windows", "ubuntu", "san", "fransisco", "helvetica", "neue", "lucida", "grande", "segoe", "ui", "microsoft", "sans", "serif"],
+	"bugs": {
+		"url": "https://github.com/jonathantneal/system-font-css/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:jonathantneal/system-font-css.git"
+	},
+	"engines": {
+		"node": ">=0.8.0"
+	},
+	"dependencies": {},
+	"devDependencies": {},
+	"main": "system-font.css",
+	"scripts": {}
+}
