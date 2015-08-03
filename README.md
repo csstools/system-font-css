@@ -26,7 +26,19 @@ p {
 
 ## Windows
 
-**Windows** has used four system typefaces. Since **Vista** it has used **Segoe UI**. In XP, it used **Tahoma**, which oddly enough does not have an italic variation. From **Windows XP** back to **Windows 3.1** it used **Microsoft Sans Serif**. Finally, from **Windows 2.0** back to **Windows 1.0** it used **Fixedsys**, which is not included in this set, with apologies to Windows 2.0 users.
+**Windows** has used four system typefaces. Since **Vista** it has used **Segoe UI**. In XP, it used **Tahoma**, which oddly enough does not have an italic variation. From **Windows ME** back to **Windows 3.1** it used **Microsoft Sans Serif**. Finally, from **Windows 2.0** back to **Windows 1.0** it used **Fixedsys**. Neither **Microsoft Sans Serif** or **Fixedsys** are included in this set, with apologies.
+
+Also, for those of opposed to joy, remember that **Internet Explorer 8** does not support local `@font-face` rules. Therefore, should you need to reference system fonts in that browser then you will need to do so from the `font` declaration.
+
+```css
+body {
+    font-family: system, "Segoe UI", Tahoma;
+}
+```
+
+## Android
+
+**Android** has used two system typefaces. Since **Ice Cream Sandwich** it has used **Roboto**. From **Jelly Bean** back to **Cupcake** it used **Droid Sans**, which also lacks an italic variation. Do you suppose OS developers dislike *emphasis*?
 
 ## Ubuntu
 

@@ -34,7 +34,7 @@
 }
 
 body {
-	font: 1em/1.6 system;
+	font: 1em/1.6 system, Tahoma, sans-serif;
 	margin: 3em auto;
 	max-width: 40em;
 }
@@ -66,7 +66,7 @@ code,
 pre {
 	border-radius: 3px;
 	font-family: "monospace", monospace;
-	font-size: 1em;
+	font-size: 85%;
 }
 
 p,
@@ -76,7 +76,6 @@ pre {
 
 code {
 	background-color: rgba(0,0,0,.04);
-	font-size: 85%;
 	padding: .2em;
 }
 
@@ -84,6 +83,8 @@ pre {
 	background-color: #f7f7f7;
 	line-height: 1.45;
 	padding: 1em;
+	-moz-tab-size: 4;
+	tab-size: 4;
 }
 
 a {
@@ -94,6 +95,18 @@ a {
 a:focus,
 a:hover {
 	text-decoration: underline;
+}
+
+.token-selector {
+	color: #0A0;
+}
+
+.token-property-name {
+	color: #44B;
+}
+
+.token-property-value {
+	color: #B50;
 }
 </style>
 
@@ -106,8 +119,8 @@ a:hover {
 </p>
 
 <pre>
-body {
-    font-family: system;
+<span class="token-selector">body</span> {
+    <span class="token-property-name">font-family</span>: <span class="token-property-value">system</span>;
 }
 </pre>
 
@@ -116,12 +129,12 @@ body {
 </p>
 
 <pre>
-blockquote {
-    font: italic 300 system;
+<span class="token-selector">blockquote</span> {
+    <span class="token-property-name">font</span>: <span class="token-property-value">italic 300 system</span>;
 }
 
-p {
-    font: 400 system;
+<span class="token-selector">p</span> {
+    <span class="token-property-name">font</span>: <span class="token-property-value">400 system</span>;
 }
 </pre>
 
@@ -138,7 +151,25 @@ p {
 </h2>
 
 <p>
-	<strong>Windows</strong> has used four system typefaces. Since <strong>Vista</strong> it has used <strong>Segoe UI</strong>. In XP, it used <strong>Tahoma</strong>, which oddly enough does not have an italic variation. From <strong>Windows XP</strong> back to <strong>Windows 3.1</strong> it used <strong>Microsoft Sans Serif</strong>. Finally, from <strong>Windows 2.0</strong> back to <strong>Windows 1.0</strong> it used <strong>Fixedsys</strong>, which is not included in this set, with apologies to Windows 2.0 users.
+	<strong>Windows</strong> has used four system typefaces. Since <strong>Vista</strong> it has used <strong>Segoe UI</strong>. In XP, it used <strong>Tahoma</strong>, which oddly enough lacks an italic variation. From <strong>Windows ME</strong> back to <strong>Windows 3.1</strong> it used <strong>Microsoft Sans Serif</strong>. Finally, from <strong>Windows 2.0</strong> back to <strong>Windows 1.0</strong> it used <strong>Fixedsys</strong>. Neither <strong>Microsoft Sans Serif</strong> or <strong>Fixedsys</strong> are included in this set, with apologies.
+</p>
+
+<p>
+	Also, for those of opposed to joy, remember that <strong>Internet Explorer 8</strong> does not support local <code>@font-face</code> rules. Therefore, should you need to reference system fonts in that browser then you will need to do so from the <code>font</code> declaration.
+</p>
+
+<pre>
+<span class="token-selector">body</span> {
+	<span class="token-property-name">font-family</span>: <span class="token-property-value">system, "Segoe UI", Tahoma</span>;
+}
+</pre>
+
+<h2>
+	Android
+</h2>
+
+<p>
+	<strong>Android</strong> has used two system typefaces. Since <strong>Ice Cream Sandwich</strong> it has used <strong>Roboto</strong>. From <strong>Jelly Bean</strong> back to <strong>Cupcake</strong> it used <strong>Droid Sans</strong>, which also lacks an italic variation. Do you suppose OS developers dislike <em>emphasis</em>?
 </p>
 
 <h2>
