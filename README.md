@@ -4,19 +4,19 @@ System Font CSS is set of `@font-face` rules that let you use the native system 
 
 ```css
 body {
-    font-family: system;
+    font-family: system-ui;
 }
 ```
 
-[system-font.css](system-font.css) offers eight variations of the `system` font family; **light** (300) **light italic**, **normal** (400), **normal italic**, **medium** (500), **medium italic**, **bold** (700), and **bold italic**.
+[system-font.css](system-font.css) offers eight variations of the `system-ui` font family; **light** (300) **light italic**, **normal** (400), **normal italic**, **medium** (500), **medium italic**, **bold** (700), and **bold italic**.
 
 ```css
 blockquote {
-    font: italic 300 system;
+    font: italic 300 system-ui;
 }
 
 p {
-    font: 400 system;
+    font: 400 system-ui;
 }
 ```
 
@@ -32,7 +32,7 @@ Also, for those of opposed to joy, remember that **Internet Explorer 8** does no
 
 ```css
 body {
-    font-family: system, "Segoe UI", Tahoma;
+    font-family: system-ui, "Segoe UI", Tahoma;
 }
 ```
 
@@ -44,6 +44,9 @@ body {
 
 Ubuntu has always used one system typeface, apty named **Ubuntu**. That part was easy.
 
-## Is `system` going to be a thing?
+## Native `system-ui` resources
 
-Maybe. There are [discussions in the W3C](https://lists.w3.org/Archives/Public/www-style/2015Jul/0169.html) to standardize a generic `system` family.
+* [CSS Fonts Module Level 4 Editor’s Draft Specification](https://drafts.csswg.org/css-fonts-4/#system-ui-def)
+* [Chrome Platform Status](https://www.chromestatus.com/feature/5640395337760768)
+* Proposed for inclusion on [Can I Use](https://github.com/Fyrd/caniuse/issues/2918)
+* Previous [discussions in the W3C](https://lists.w3.org/Archives/Public/www-style/2015Jul/0169.html) to standardize a generic `system` family.
