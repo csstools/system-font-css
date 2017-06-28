@@ -42,7 +42,7 @@ body {
 
 ## Ubuntu
 
-Ubuntu has always used one system typeface, apty named **Ubuntu**. That part was easy.
+Ubuntu has always used one system typeface, aptly named **Ubuntu**. That part was easy.
 
 ## Native `system-ui` resources
 
