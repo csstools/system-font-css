@@ -22,5 +22,7 @@
 	"dependencies": {},
 	"devDependencies": {},
 	"main": "system-font.css",
-	"scripts": {}
+	"scripts": {
+		"install": "cp system-font.css _system-font.scss ; cp system-font.css system-font.less"
+	}
 }
