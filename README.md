@@ -26,7 +26,7 @@ p {
 
 This package can be installed with:
 
-* [npm](https://www.npmjs.com/package/owl.carousel): `npm install --save system-font-css`
+* [npm](https://www.npmjs.com/package/system-font-css): `npm install --save system-font-css`
 
 ### Load
 
