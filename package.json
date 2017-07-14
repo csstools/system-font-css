@@ -1,7 +1,7 @@
 {
 	"name": "system-font-css",
 	"description": "Use the native system font of the OS running the browser",
-	"version": "2.0.0",
+	"version": "2.0.1",
 	"author": "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com)",
 	"contributors": [
 		"Zach Leatherman <zachleatherman@gmail.com> (https://zachleat.com/)"
