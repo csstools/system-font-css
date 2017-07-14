@@ -20,6 +20,22 @@ p {
 }
 ```
 
+## Quick Start
+
+### Install
+
+This package can be installed with:
+
+* [npm](https://www.npmjs.com/package/system-font-css): `npm install --save system-font-css`
+
+### Load
+
+When installed with npm, system-font.css will create both a SCSS and LESS partial for easy importing:
+
+```scss
+@import 'system-font';
+```
+
 ## OSX
 
 **OSX** has used three system typefaces. Since **El Capitan** it has used **San Fransisco**. In **Yosemite** it used **Helvetica Neue**. From **Mavericks** back to **Kodiak** it used **Lucida Grande**.
