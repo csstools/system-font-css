@@ -1,0 +1,5 @@
+node_modules
+
+# Exclude generated files
+_system-font.scss
+system-font.less
