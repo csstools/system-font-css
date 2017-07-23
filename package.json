@@ -19,10 +19,12 @@
 	"engines": {
 		"node": ">=0.8.0"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"cpr": "^2.2.0"
+	},
 	"devDependencies": {},
 	"main": "system-font.css",
 	"scripts": {
-		"install": "cp system-font.css _system-font.scss ; cp system-font.css system-font.less"
+		"install": "cpr system-font.css _system-font.scss -o && cpr system-font.css system-font.less -o"
 	}
 }
