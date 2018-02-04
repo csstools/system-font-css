@@ -33,7 +33,7 @@ This package can be installed with:
 When installed with npm, system-font.css will create both a SCSS and LESS partial for easy importing:
 
 ```scss
-@import 'system-font';
+@import 'system-font-css';
 ```
 
 ## OSX
