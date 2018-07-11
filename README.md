@@ -64,5 +64,5 @@ Ubuntu has always used one system typeface, aptly named **Ubuntu**. That part wa
 
 * [CSS Fonts Module Level 4 Editor’s Draft Specification](https://drafts.csswg.org/css-fonts-4/#system-ui-def)
 * [Chrome Platform Status](https://www.chromestatus.com/feature/5640395337760768)
-* Proposed for inclusion on [Can I Use](https://github.com/Fyrd/caniuse/issues/2918)
+* [Can I Use entry](https://caniuse.com/#feat=font-family-system-ui)
 * Previous [discussions in the W3C](https://lists.w3.org/Archives/Public/www-style/2015Jul/0169.html) to standardize a generic `system` family.
